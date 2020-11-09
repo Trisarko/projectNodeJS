@@ -1,0 +1,61 @@
+#Forma seis. Consumir mensaje de Express
+
+#Rest API Example
+
+GET http://localhost:3000/fdfd
+
+###
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/user_id
+
+###
+POST http://localhost:3000/add_user
+
+###
+PUT http://localhost:3000/update_user/user_id
+
+###
+PATCH http://localhost:3000/update_user/user_id
+
+###
+DELETE http://localhost:3000/delete_user/user_id
+
+###
+GET http://localhost:3000/api/product
+
+###
+POST http://localhost:3000/api/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Table",
+    "price": 700,
+    "category": "home",
+    "image": "mesa.png"
+
+}
+
+###
+GET http://localhost:3000/api/product HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/product/5f9a2aa0999a60112c408a79 HTTP/1.1
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/api/product/5fa341ec02d5812cfc6b98f8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "moviles",
+    "price" : 650,
+    "category" : "technology",
+    "image" : "movil.jpg"
+}
+
+###
+DELETE http://localhost:3000/api/product/5f9a2aa0999a60112c408a79 HTTP/1.1
+Content-Type: application/json
